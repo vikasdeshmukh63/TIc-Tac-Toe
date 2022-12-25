@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.congratulations {
+  position: absolute;
+  left: 100px;
+  top: 300px;
+  width: 0px;
+  transition: width 2s ease;
+}
+.gameover {
+  position: absolute;
+  left: 150px;
+  top: 350px;
+  width: 0px;
+  transition: width 2s ease;
+}
+
+.info {
+  font-family: "Rubik Vinyl", cursive;
+  font-size: 4vw;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 9vw);
+  grid-template-rows: repeat(3, 9vw);
+}
+
+.box-text {
+  font-size: 7vw;
+  font-family: "Permanent Marker", cursive;
+}
+.box {
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt-0 {
+  border-top: none;
+}
+
+.bb-0 {
+  border-bottom: none;
+}
+
+.bl-0 {
+  border-left: none;
+}
+
+.br-0 {
+  border-right: none;
+}
+
+.info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 50px 50px;
+}
+
+.button {
+  font-family: "Baloo Da 2", cursive;
+  background: linear-gradient(to right, rgb(0, 83, 236), rgb(130, 16, 16));
+  padding: 0px 30px;
+  border-radius: 10rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  scale: 110%;
+  transition: scale 1s ease;
+}
